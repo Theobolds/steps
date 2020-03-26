@@ -9,12 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let grid = Grid()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        grid.StepGridView(rows: 4, columns: 4, rootView: view)
     }
-
-
+    
 }
 
