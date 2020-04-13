@@ -26,8 +26,11 @@ class TransportVC: UIViewController {
     
     func configUI() {
         view.addSubview(playBtn as UIView)
+        playBtn.titleLabel?.font = .systemFont(ofSize: 30, weight: .bold)
         playBtn.translatesAutoresizingMaskIntoConstraints = false
-        playBtn.setImage(UIImage(systemName: "playpause.fill"), for: .normal)
+        playBtn.setImage(UIImage(systemName: "playpause.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 50, weight: .bold)), for: .normal)
+        UIView.appearance().tintColor = .systemRed
+            
 
         
         NSLayoutConstraint.activate([
