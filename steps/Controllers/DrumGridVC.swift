@@ -26,6 +26,7 @@ class DrumGridVC: UIViewController {
     }
     
     
+    // generate grid
     func configDrumGrid() {
         drumGrid.StepGridView(rows: 3, columns: 3, buttonArray: borgInstrumentArray as NSArray, rootView: view)
     }

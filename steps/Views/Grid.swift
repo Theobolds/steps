@@ -41,12 +41,12 @@ public class Grid: UIView {
         rootView.addSubview(gridView)
         gridView.translatesAutoresizingMaskIntoConstraints = false
         
-        gridView.topAnchor.constraint(equalTo: rootView.layoutMarginsGuide.topAnchor , constant: gridSpacing).isActive = true
-        gridView.leftAnchor.constraint(equalTo: rootView.layoutMarginsGuide.leftAnchor, constant: gridSpacing).isActive = true
-        gridView.rightAnchor.constraint(equalTo: rootView.layoutMarginsGuide.rightAnchor, constant: -gridSpacing).isActive = true
-        gridView.bottomAnchor.constraint(equalTo: rootView.layoutMarginsGuide.bottomAnchor, constant: -gridSpacing).isActive = true
-
-        
+        NSLayoutConstraint.activate([
+            gridView.topAnchor.constraint(equalTo: rootView.layoutMarginsGuide.topAnchor , constant: gridSpacing),
+            gridView.leftAnchor.constraint(equalTo: rootView.layoutMarginsGuide.leftAnchor, constant: gridSpacing),
+            gridView.rightAnchor.constraint(equalTo: rootView.layoutMarginsGuide.rightAnchor, constant: -gridSpacing),
+            gridView.bottomAnchor.constraint(equalTo: rootView.layoutMarginsGuide.bottomAnchor, constant: -gridSpacing)
+        ])
         
     }
 
