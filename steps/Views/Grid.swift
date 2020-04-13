@@ -2,17 +2,17 @@
 //  Grid.swift
 //  steps
 //
-//  Created by alex theobold on 26/03/2020.
+//  Created by alex theobold on 13/04/2020.
 //  Copyright © 2020 alex theobold. All rights reserved.
 //
 
 import UIKit
 
-class Grid: UIView {
+public class Grid: UIView {
 
     let gridSpacing: CGFloat = 10.0
     
-    func StepGridView(rows: Int, columns: Int, rootView: UIView) {
+    func StepGridView(rows: Int, columns: Int, buttonArray: NSArray, rootView: UIView) {
         
         // Initialise StackView
         let gridView = UIStackView()
@@ -31,7 +31,7 @@ class Grid: UIView {
             for col in 0 ..< columns {
                 let button = CustomButton()
                 
-                button.setTitle("\((row*columns) + col + 1)", for: .normal)
+                button.setTitle("\(buttonArray[row*columns + col])", for: .normal)
                 
                 horizSpace.addArrangedSubview(button)
             }
@@ -39,13 +39,16 @@ class Grid: UIView {
         }
         
         rootView.addSubview(gridView)
-        
-        // constraints
         gridView.translatesAutoresizingMaskIntoConstraints = false
-        gridView.leadingAnchor.constraint(equalTo: rootView.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-        gridView.trailingAnchor.constraint(equalTo: rootView.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-        gridView.centerXAnchor.constraint(equalTo: rootView.centerXAnchor).isActive = true
-        gridView.topAnchor.constraint(equalTo: rootView.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        
+        gridView.topAnchor.constraint(equalTo: rootView.layoutMarginsGuide.topAnchor , constant: gridSpacing).isActive = true
+        gridView.leftAnchor.constraint(equalTo: rootView.layoutMarginsGuide.leftAnchor, constant: gridSpacing).isActive = true
+        gridView.rightAnchor.constraint(equalTo: rootView.layoutMarginsGuide.rightAnchor, constant: -gridSpacing).isActive = true
+        gridView.bottomAnchor.constraint(equalTo: rootView.layoutMarginsGuide.bottomAnchor, constant: -gridSpacing).isActive = true
+
+        
+        
     }
 
 }
+

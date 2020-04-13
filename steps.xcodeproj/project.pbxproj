@@ -9,23 +9,43 @@
 /* Begin PBXBuildFile section */
 		D9264B8E242BFEA900D91B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9264B8D242BFEA900D91B72 /* AppDelegate.swift */; };
 		D9264B90242BFEA900D91B72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9264B8F242BFEA900D91B72 /* SceneDelegate.swift */; };
-		D9264B92242BFEA900D91B72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9264B91242BFEA900D91B72 /* ViewController.swift */; };
 		D9264B97242BFEAA00D91B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9264B96242BFEAA00D91B72 /* Assets.xcassets */; };
 		D9264B9A242BFEAA00D91B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9264B98242BFEAA00D91B72 /* LaunchScreen.storyboard */; };
-		D9264BA2242CA94200D91B72 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9264BA1242CA94200D91B72 /* CustomButton.swift */; };
-		D9264BA4242CB66700D91B72 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9264BA3242CB66700D91B72 /* Grid.swift */; };
+		D977B6D62444B789000F7625 /* DrumGridVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977B6D52444B789000F7625 /* DrumGridVC.swift */; };
+		D977B6D82444B7A1000F7625 /* TransportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977B6D72444B7A1000F7625 /* TransportVC.swift */; };
+		D977B6DD2444B841000F7625 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977B6DC2444B841000F7625 /* Grid.swift */; };
+		D977B6DF2444B879000F7625 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977B6DE2444B879000F7625 /* CustomButton.swift */; };
+		D977B6EB2444B8D4000F7625 /* HiHat.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E22444B8D4000F7625 /* HiHat.wav */; };
+		D977B6EC2444B8D4000F7625 /* HighTom.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E32444B8D4000F7625 /* HighTom.wav */; };
+		D977B6ED2444B8D4000F7625 /* LowTom.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E42444B8D4000F7625 /* LowTom.wav */; };
+		D977B6EE2444B8D4000F7625 /* Kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E52444B8D4000F7625 /* Kick.wav */; };
+		D977B6EF2444B8D4000F7625 /* Snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E62444B8D4000F7625 /* Snare.wav */; };
+		D977B6F02444B8D4000F7625 /* Clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E72444B8D4000F7625 /* Clap.wav */; };
+		D977B6F12444B8D4000F7625 /* CowBell.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E82444B8D4000F7625 /* CowBell.wav */; };
+		D977B6F22444B8D4000F7625 /* MedTom.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6E92444B8D4000F7625 /* MedTom.wav */; };
+		D977B6F32444B8D4000F7625 /* RimShot.wav in Resources */ = {isa = PBXBuildFile; fileRef = D977B6EA2444B8D4000F7625 /* RimShot.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9264B8A242BFEA900D91B72 /* steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9264B8D242BFEA900D91B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9264B8F242BFEA900D91B72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9264B91242BFEA900D91B72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9264B96242BFEAA00D91B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9264B99242BFEAA00D91B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9264B9B242BFEAA00D91B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D9264BA1242CA94200D91B72 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		D9264BA3242CB66700D91B72 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		D977B6D52444B789000F7625 /* DrumGridVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumGridVC.swift; sourceTree = "<group>"; };
+		D977B6D72444B7A1000F7625 /* TransportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportVC.swift; sourceTree = "<group>"; };
+		D977B6DC2444B841000F7625 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		D977B6DE2444B879000F7625 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D977B6E22444B8D4000F7625 /* HiHat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HiHat.wav; sourceTree = "<group>"; };
+		D977B6E32444B8D4000F7625 /* HighTom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HighTom.wav; sourceTree = "<group>"; };
+		D977B6E42444B8D4000F7625 /* LowTom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = LowTom.wav; sourceTree = "<group>"; };
+		D977B6E52444B8D4000F7625 /* Kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Kick.wav; sourceTree = "<group>"; };
+		D977B6E62444B8D4000F7625 /* Snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Snare.wav; sourceTree = "<group>"; };
+		D977B6E72444B8D4000F7625 /* Clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Clap.wav; sourceTree = "<group>"; };
+		D977B6E82444B8D4000F7625 /* CowBell.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CowBell.wav; sourceTree = "<group>"; };
+		D977B6E92444B8D4000F7625 /* MedTom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MedTom.wav; sourceTree = "<group>"; };
+		D977B6EA2444B8D4000F7625 /* RimShot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RimShot.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +80,48 @@
 			children = (
 				D9264B8D242BFEA900D91B72 /* AppDelegate.swift */,
 				D9264B8F242BFEA900D91B72 /* SceneDelegate.swift */,
-				D9264B91242BFEA900D91B72 /* ViewController.swift */,
-				D9264BA3242CB66700D91B72 /* Grid.swift */,
-				D9264BA1242CA94200D91B72 /* CustomButton.swift */,
+				D977B6E02444B898000F7625 /* Views */,
+				D977B6D92444B7AA000F7625 /* Controllers */,
+				D977B6E12444B8D4000F7625 /* sounds */,
 				D9264B96242BFEAA00D91B72 /* Assets.xcassets */,
 				D9264B98242BFEAA00D91B72 /* LaunchScreen.storyboard */,
 				D9264B9B242BFEAA00D91B72 /* Info.plist */,
 			);
 			path = steps;
+			sourceTree = "<group>";
+		};
+		D977B6D92444B7AA000F7625 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D977B6D52444B789000F7625 /* DrumGridVC.swift */,
+				D977B6D72444B7A1000F7625 /* TransportVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D977B6E02444B898000F7625 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D977B6DC2444B841000F7625 /* Grid.swift */,
+				D977B6DE2444B879000F7625 /* CustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D977B6E12444B8D4000F7625 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D977B6E22444B8D4000F7625 /* HiHat.wav */,
+				D977B6E32444B8D4000F7625 /* HighTom.wav */,
+				D977B6E42444B8D4000F7625 /* LowTom.wav */,
+				D977B6E52444B8D4000F7625 /* Kick.wav */,
+				D977B6E62444B8D4000F7625 /* Snare.wav */,
+				D977B6E72444B8D4000F7625 /* Clap.wav */,
+				D977B6E82444B8D4000F7625 /* CowBell.wav */,
+				D977B6E92444B8D4000F7625 /* MedTom.wav */,
+				D977B6EA2444B8D4000F7625 /* RimShot.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +182,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D977B6F22444B8D4000F7625 /* MedTom.wav in Resources */,
+				D977B6EF2444B8D4000F7625 /* Snare.wav in Resources */,
+				D977B6ED2444B8D4000F7625 /* LowTom.wav in Resources */,
 				D9264B9A242BFEAA00D91B72 /* LaunchScreen.storyboard in Resources */,
+				D977B6F12444B8D4000F7625 /* CowBell.wav in Resources */,
+				D977B6F32444B8D4000F7625 /* RimShot.wav in Resources */,
 				D9264B97242BFEAA00D91B72 /* Assets.xcassets in Resources */,
+				D977B6F02444B8D4000F7625 /* Clap.wav in Resources */,
+				D977B6EB2444B8D4000F7625 /* HiHat.wav in Resources */,
+				D977B6EE2444B8D4000F7625 /* Kick.wav in Resources */,
+				D977B6EC2444B8D4000F7625 /* HighTom.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9264BA2242CA94200D91B72 /* CustomButton.swift in Sources */,
-				D9264B92242BFEA900D91B72 /* ViewController.swift in Sources */,
 				D9264B8E242BFEA900D91B72 /* AppDelegate.swift in Sources */,
-				D9264BA4242CB66700D91B72 /* Grid.swift in Sources */,
+				D977B6D62444B789000F7625 /* DrumGridVC.swift in Sources */,
+				D977B6DF2444B879000F7625 /* CustomButton.swift in Sources */,
+				D977B6D82444B7A1000F7625 /* TransportVC.swift in Sources */,
+				D977B6DD2444B841000F7625 /* Grid.swift in Sources */,
 				D9264B90242BFEA900D91B72 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

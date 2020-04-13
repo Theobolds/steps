@@ -2,7 +2,7 @@
 //  CustomButton.swift
 //  steps
 //
-//  Created by alex theobold on 26/03/2020.
+//  Created by alex theobold on 13/04/2020.
 //  Copyright © 2020 alex theobold. All rights reserved.
 //
 
@@ -24,8 +24,8 @@ class CustomButton: UIButton {
     private func setup() {
         backgroundColor = .black
         layer.borderWidth = 1
-        layer.borderColor = UIColor.systemTeal.cgColor
+        layer.borderColor = UIColor.systemRed.cgColor
         layer.cornerRadius = 20
-        heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
 }
+

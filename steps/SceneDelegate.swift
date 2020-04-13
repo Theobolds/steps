@@ -14,12 +14,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-      guard let windowScene = (scene as? UIWindowScene) else { return }
-      window = UIWindow(frame: UIScreen.main.bounds)
-      let viewController = ViewController()
-      window?.rootViewController = viewController
-      window?.makeKeyAndVisible()
-      window?.windowScene = windowScene
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = createTabbar()
+        window?.makeKeyAndVisible()
+        window?.overrideUserInterfaceStyle = .dark
+    }
+    
+    
+    func createDrumsNC() -> UINavigationController {
+        let drumGridVC = DrumGridVC()
+        drumGridVC.tabBarItem = UITabBarItem(title: "Drums", image: UIImage(systemName: "dial.fill"), tag: 0)
+        return UINavigationController(rootViewController: drumGridVC)
+    }
+    
+    
+    func createTransportNC() -> UINavigationController {
+        let transportVC = TransportVC()
+        transportVC.tabBarItem = UITabBarItem(title: "Transport", image: UIImage(systemName: "playpause.fill"), tag: 0)
+        return UINavigationController(rootViewController: transportVC)
+    }
+    
+    
+    func createTabbar() -> UITabBarController {
+        let tabbar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemRed
+        tabbar.viewControllers = [createDrumsNC(), createTransportNC()]
+        
+        return tabbar
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
