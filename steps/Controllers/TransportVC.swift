@@ -12,6 +12,9 @@ class TransportVC: UIViewController {
     
     let playBtn = UIButton()
     let stopBtn = UIButton()
+    let BPMSlider = UISlider()
+    let currentBPM = UILabel()
+    let BPMLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,9 +72,56 @@ class TransportVC: UIViewController {
     }
     
     
+    func configSlider() {
+        BPMSlider.minimumValue = 60
+        BPMSlider.maximumValue = 180
+        BPMSlider.value = 120
+        BPMSlider.minimumTrackTintColor = .systemTeal
+        BPMSlider.maximumTrackTintColor = .systemTeal
+        BPMSlider.thumbTintColor = .systemTeal
+        
+        BPMSlider.addTarget(self, action: #selector(labelUpdated), for: .valueChanged)
+        
+        view.addSubview(BPMSlider as UIView)
+        BPMSlider.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            BPMSlider.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            BPMSlider.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            BPMSlider.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    
+    func configBPMLabel() {
+        view.addSubview(currentBPM)
+        view.addSubview(BPMLabel)
+        BPMLabel.text = "BPM"
+        currentBPM.text = String(Int(BPMSlider.value))
+        currentBPM.textColor = .systemTeal
+        BPMLabel.textColor = .systemTeal
+        currentBPM.textAlignment = .center
+        BPMLabel.textAlignment = .center
+        self.currentBPM.font = currentBPM.font.withSize(100)
+        self.BPMLabel.font = BPMLabel.font.withSize(50)
+        currentBPM.translatesAutoresizingMaskIntoConstraints = false
+        BPMLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            currentBPM.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100),
+            currentBPM.widthAnchor.constraint(equalTo: view.widthAnchor),
+            BPMLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -200),
+            BPMLabel.widthAnchor.constraint(equalTo: view.widthAnchor)
+        ])
+        
+    }
+    
+    
     func configUI() {
         configPlayButton()
         configStopButton()
+        configSlider()
+        configBPMLabel()
     }
     
     /*
@@ -79,6 +129,10 @@ class TransportVC: UIViewController {
     * EVENT HANDLERS
     * -----------------------------------------------------------------
     */
+    
+    @objc func labelUpdated() {
+        currentBPM.text = String(Int(BPMSlider.value))
+    }
     
     
     @objc func playButtonTapped() {
