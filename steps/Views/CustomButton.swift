@@ -22,7 +22,7 @@ class CustomButton: UIButton {
     }
     
     private func setup() {
-        backgroundColor = .black
+        backgroundColor = .lightGray
         layer.borderWidth = 1
         layer.borderColor = UIColor.systemTeal.cgColor
         layer.cornerRadius = 20

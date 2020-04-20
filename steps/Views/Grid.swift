@@ -30,9 +30,9 @@ public class Grid: UIView {
             
             for col in 0 ..< columns {
                 let button = CustomButton()
-                
-                button.setTitle("\(buttonArray[row*columns + col])", for: .normal)
-                
+                button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+                button.imageView?.contentMode   = .scaleAspectFit
+                button.setImage(UIImage(named: "\(buttonArray[row*columns + col])"), for: .normal)
                 horizSpace.addArrangedSubview(button)
             }
             gridView.addArrangedSubview(horizSpace)
